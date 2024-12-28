@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // This code attempts to access a property of an element before it exists
+    document.getElementById('myDiv').style.color = 'red'; //Error: Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    // The problem lies in accessing the element before it has loaded completely
+  </script>
+</body>
+</html>
